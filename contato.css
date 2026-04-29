@@ -1,0 +1,116 @@
+body {
+    background-color: #c9c95d;
+    font-family: Arial;
+    color: white;
+}
+
+/* TOPO */
+.topo {
+    text-align: center;
+    background-color: #6d6d4c;
+    padding: 10px;
+    border-bottom: 4px solid #42422a;
+    text-shadow: 2px 2px black;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    background-color: #efef79;
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid #b1b108;
+    box-shadow: 5px 5px 0px #b1b108;
+}
+
+/* INPUTS */
+input, textarea {
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border: 2px inset #b1b108;
+    background-color: #6d6d4c;
+     text-shadow: 2px 2px black;
+}
+
+/* BOTÃO */
+button {
+    background-color: silver;
+    border: 2px outset white;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffffcc;
+    color: black;
+    transform: scale(1.05);
+}
+
+button:active {
+    border: 2px inset black;
+    transform: scale(0.95);
+}
+
+.email {
+    color: blue;
+}
+
+.telefone {
+    color: blue;
+}
+
+/* HOME */
+.home-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.home-btn img {
+    width: 40px;
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+/* QUANDO PASSA O MOUSE */
+.home-btn:hover img {
+    transform: scale(1.2);
+}
+
+/* Tooltip estilo Windows XP */
+.home-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background: #ffffcc;
+  color: black;
+  border: 1px solid #000;
+  padding: 3px 6px;
+  font-size: 12px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  pointer-events: none;
+}
+
+.home-btn:hover .tooltip {
+  opacity: 1;
+}
+
+/* RODAPÉ */
+.rodape {
+    margin-top: 30px;
+    background-color: #787846;
+    padding: 10px;
+}

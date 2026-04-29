@@ -1,0 +1,136 @@
+body {
+    background-color: #8585bb;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* TOPO */
+.topo {
+    text-align: center;
+    background-color: #353563;
+    padding: 10px;
+    border-bottom: 4px solid #22224f;
+    text-shadow: 2px 2px black;
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas flexíveis */
+    gap: 15px;
+    margin: 20px;
+}
+
+/* PRODUTOS */
+.produto {
+    background-color: #a2a2ff;
+    border: 3px solid #3737a6;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 0px #3737a6;
+}
+
+/* IMAGEM */
+.produto img {
+    width: 100%;
+    border: 2px solid #56565a;
+}
+
+/* TEXTO */
+.produto h3 {
+    color: #ffffcc;
+    text-shadow: 2px 2px black;
+}
+
+.produto span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: yellow;
+}
+
+/* BOTÃO */
+button {
+    background-color: silver;
+    border: 2px outset white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: silver;
+    border: 2px outset white;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.1s;
+}
+
+/* QUANDO PASSA O MOUSE */
+button:hover {
+    background-color: #c0c0ff; /* meio azulzinho anos 2000 */
+    color: black;
+    transform: scale(1.05);
+}
+
+/* QUANDO CLICA */
+button:active {
+    border: 2px inset black;
+    transform: scale(0.95);
+}
+
+/* HOME */
+.home-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.home-btn img {
+    width: 40px;
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+/* QUANDO PASSA O MOUSE */
+.home-btn:hover img {
+    transform: scale(1.2);
+}
+
+/* Tooltip estilo Windows XP */
+.home-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background: #ffffcc;
+  color: black;
+  border: 1px solid #000;
+  padding: 3px 6px;
+  font-size: 12px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  pointer-events: none;
+}
+
+.home-btn:hover .tooltip {
+  opacity: 1;
+}
+
+
+/* RODAPÉ */
+.rodape {
+    margin-top: 30px;
+    background-color: #3f3f72;
+    padding: 10px;
+}
